@@ -1,29 +1,38 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <title>TodoList</title>
 </head>
 <body>
-    <header></header>
-    <main>
-       
-        <div class="toDoList">
-           <div class="noteBook">
-                <div class="noteBookUpper">
-
-                </div>
-                <div class="noteBookMain">
-
-                </div> 
-           </div>
-        </div>
-
-
-    </main>
-    <footer></footer>
+    <div class="container">
+        <header>
+            <h1>Create your Todo-List</h1>
+            <form action="" id="task-form">
+                <input type="text" id="task-input" placeholder="What are your tasks?">
+                <input type="submit" id="task-submit" value="Add">
     
+            </form>
+        </header>
+        <main>
+            <section class="task-list">
+                
+               <div id="tasks">
+                    
+                </div>
+    
+            </section>
+        </main>
+    </div>
+    
+
+
+    <script src="index.js"></script>
 </body>
 </html>
+
+
