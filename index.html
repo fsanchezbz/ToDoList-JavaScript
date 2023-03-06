@@ -1,92 +1,38 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ToDoList</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css"> 
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>TodoList</title>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>Create your Todo-List</h1>
+            <form action="" id="task-form">
+                <input type="text" id="task-input" placeholder="What are your tasks?">
+                <input type="submit" id="task-submit" value="Add">
     
-<section class="vh-100">
-    <div class="container py-5 h-100">
-      <div class="row d-flex justify-content-center align-items-center h-100">
-        <div class="col">
-          <div class="card" id="list1" style="border-radius: .75rem; background-color: #eff1f2;">
-            <div class="card-body py-4 px-4 px-md-5">
-  
-              <p class="h1 text-center mt-3 mb-4 pb-3 text-primary">
-                <i class="fas fa-check-square me-1"></i>
-                <u>To Do List</u>
-              </p>
-            
-            <!--FormControlInput--->
-              <div class="pb-2">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="d-flex flex-row align-items-center">
-                     <!--here can you see id="FormControlInput--->
-                      <input type="text" class="form-control form-control-lg" id="FormControlInput"
-                        placeholder="Add new...">
-                      <a href="#!" data-mdb-toggle="tooltip" title="Set due date"><i
-                          class="fas fa-calendar-alt fa-lg me-3"></i></a>
-                      <div>
-                        <button type="button" class="btn btn-primary">Add</button>
-                      </div>
-                    </div>
-                  </div>
+            </form>
+        </header>
+        <main>
+            <section class="task-list">
+                
+               <div id="tasks">
+                    
                 </div>
-              </div>
-            <!--END of FormControlInput--->
-
-              <hr class="my-4">
-  
-            <!--task number one-->
-              <ul class="list-group list-group-horizontal rounded-0 bg-transparent">
-                <!--checkbox-->
-                <li
-                  class="list-group-item d-flex align-items-center ps-0 pe-3 py-1 rounded-0 border-0 bg-transparent">
-                  <div class="form-check">
-                    <input class="form-check-input me-0" type="checkbox" value="" id="checkbox1"
-                      aria-label="..." checked />
-                  </div>
-                </li>
-                <!--task name-->
-                <li
-                  class="list-group-item px-3 py-1 d-flex align-items-center flex-grow-1 border-0 bg-transparent">
-                  <p class="lead fw-normal mb-0">Painting the room</p>
-                </li>
-            </ul>
-
-            <!--task number two-->
-              <ul class="list-group list-group-horizontal rounded-0">
-                <!--checkbox-->
-                <li
-                  class="list-group-item d-flex align-items-center ps-0 pe-3 py-1 rounded-0 border-0 bg-transparent">
-                  <div class="form-check">
-                    <input class="form-check-input me-0" type="checkbox" value="" id="checkbox2"
-                      aria-label="..." />
-                  </div>
-                </li>
-                <!--task name-->
-                <li
-                  class="list-group-item px-3 py-1 d-flex align-items-center flex-grow-1 border-0 bg-transparent">
-                  <p class="lead fw-normal mb-0">Making your tax return</p>
-                </li>
-              </ul>
-
-            <!---new ul for more checkbox&task-->
-  
-            </div>
-          </div>
-        </div>
-      </div>
+    
+            </section>
+        </main>
     </div>
-  </section>
+    
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
 </body>
 </html>
+
+
