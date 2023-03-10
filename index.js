@@ -3,6 +3,7 @@ const input = document.querySelector("#task-input");
 const list = document.querySelector("#tasks");
 const taskList = Array.from(JSON.parse(localStorage.getItem("taskList")) || []);
 
+//make store
 const setStorage = () => {
   localStorage.setItem("taskList", JSON.stringify(taskList));
 };
